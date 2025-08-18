@@ -1,8 +1,10 @@
+import Navbar from "./components/Navbar";
+import './App.css'
+
 export default function App(){
   return(
-
     <>
-   <h1>heloo mona</h1>
-  </>
+      <Navbar/>
+    </>
   )
 }

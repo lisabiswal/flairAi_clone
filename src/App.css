@@ -109,28 +109,33 @@ main{
   font-weight: bold;
 }
 .booking-btn button:nth-child(1){
-
   width: 13rem;
-  /* height: 3rem; */
   padding: 1rem;
   font-size: 15px;
   background-color: var(--heroText);
-
+}
+.booking-btn button:nth-child(1):hover{
+  background-color: #9ae81d;
+  cursor: pointer;
 }
 .booking-btn button:nth-child(2){
   width: 10rem;
   padding: 1rem;
   font-size: 15px;
+  background-color: var(--bodyColor);
+  border: 1px solid var(--buttonBorder);
+  color: var(--testColor);
+}
 
+.booking-btn button:nth-child(2):hover{
+  border: 1px solid var(--hover);
+  cursor: pointer;
 }
 .head p{
   display: inline-block;
-  margin: 0 10px;
-  /* overflow-x: hidden; */
-  
+  margin: 0 10px;  
 }
 .head span{
-  /* border-bottom:2px solid var(--bodyColor); */
   text-decoration: underline;
   text-decoration-color: var(--bodyColor);
   overflow-x: hidden;

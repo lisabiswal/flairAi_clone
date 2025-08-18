@@ -77,15 +77,15 @@ nav .right-side{
   cursor: pointer;
 }
 main .hero{
-  width: 60rem;
+  width: 54rem;
   margin: 0 auto;
-  text-align: center;
 }
 main{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem;
+
 }
 .ai-design h1{
   font-size: 6rem;
@@ -98,7 +98,7 @@ main{
   font-weight: 300;
   margin: 2rem 0;
   word-spacing: 5px;
-  font-size: 1.6rem;
+  font-size: 1.5rem;
 }
 .booking-btn button{
   border-radius: 11px;
@@ -130,10 +130,16 @@ main{
   
 }
 .head span{
-  border-bottom:2px solid var(--bodyColor);
+  /* border-bottom:2px solid var(--bodyColor); */
+  text-decoration: underline;
+  text-decoration-color: var(--bodyColor);
   overflow-x: hidden;
 
 }
+.secAnim{
+  text-align: center;
+}
+
 
 
 

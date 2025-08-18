@@ -8,11 +8,11 @@ export default function Navbar() {
           <h2>Flair.ai</h2>
         </div>
         <ul className="right-side">
-          <li>Features <i class="ri-arrow-down-wide-line"></i></li>
+          <li>Features <i className="ri-arrow-down-wide-line"></i></li>
           <li>Pricing</li>
           <li>Enterpise</li>
           <li>Community Gallery</li>
-          <li>Resources <i class="ri-arrow-down-wide-line"></i></li>
+          <li>Resources <i className="ri-arrow-down-wide-line"></i></li>
           <li>
             <button>Try Flair AI for free</button>
           </li>

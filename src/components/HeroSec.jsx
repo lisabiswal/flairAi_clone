@@ -1,5 +1,6 @@
 import { useGSAP } from "@gsap/react"
 import gsap from "gsap"
+import { useEffect, useState } from "react";
 export default function HeroSec() {
   useGSAP(() => {
     const tl = gsap.timeline();
@@ -14,10 +15,26 @@ export default function HeroSec() {
       y: 40,
       opacity: 0,
       duration: 0.5,
-      stagger: 0.3,
+      stagger: 0.9,
     }, "+=0.2");
   });
-
+  const word = ["photoshoots","videos", "advertising", "content","marketing"]
+  const [idx, setIdx] = useState(0)
+  useEffect(()=>{
+    const interval = setTimeout(()=>{
+      gsap.to(".change",{
+        y: 3,
+        delay: 2,
+        opacity: 0,
+        duration: 0.5,
+        onComplete: ()=>{
+          setIdx((prev) => (prev + 1) % word.length)
+          gsap.to(".change", {y: -3, opacity: 1, duration: 0.5 });
+        }
+      })
+    },2000)
+    return () => clearInterval(interval);
+  })
   return (
     <main>
       <div className="hero">
@@ -29,7 +46,7 @@ export default function HeroSec() {
             <span><p>tool</p></span>
             <span><p>for</p></span>
             <span><p>product</p></span>
-            <span><p>photoshoots</p></span>
+            <span><p className="change">{word[idx]}</p></span>
           </h1>
         </div>
         <div className="secAnim">

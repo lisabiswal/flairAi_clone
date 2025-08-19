@@ -171,15 +171,35 @@ main{
 .scrollx{
   width: 70rem;
   overflow-x: hidden;
+  background-color: #151515;
+  padding: 2rem;
+
 }
 .marque-heading .inner-cont h2{
   color: #515257;
   font-weight: 400;
-  margin-bottom: 2rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-size: 28px;
 }
-
+.scroll-card{
+  width: 10rem;
+  height: 10rem;
+  background-color: #141414;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 1px rgb(76, 75, 75);
+  border-radius: 10px;
+  flex-shrink: 0;
+ 
+}
+.inner-scroll{
+  display: flex;
+  gap: 1.9rem;
+   white-space: nowrap;
+   
+}
 
 
 

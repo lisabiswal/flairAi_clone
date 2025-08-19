@@ -3,6 +3,7 @@ export default function Navbar() {
   return (
     <header>
       <nav>
+        
         <div className="left-side">
           <img src={logo} alt="website logo" />
           <h2>Flair.ai</h2>

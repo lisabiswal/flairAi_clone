@@ -5,6 +5,7 @@
   --hero: #c7c7c7;
   --buttonBorder: #4d4a4add;
   --heroText: #85cc16;
+  --navBg: #16161677;
 }
 *{
   margin: 0;
@@ -33,6 +34,7 @@ nav{
   align-items: center;
   gap: 12rem;
   padding: 2rem 0;
+  /* position: fixed; */
 }
 nav .right-side{
   display: flex;
@@ -40,6 +42,17 @@ nav .right-side{
   align-items: center;
   list-style: none;
   gap: 3rem;
+}
+header{
+  position: fixed;
+  top: 0;
+  z-index: 111;
+  margin: 0 auto;
+  /* background-color: #9ae81d; */
+  width: 100%;
+  background-color: var(--navBg);
+  /* filter: blur(10px); */
+  backdrop-filter: blur(10px);
 }
 .right-side li{
   font-weight: bold;
@@ -79,12 +92,15 @@ nav .right-side{
 main .hero{
   width: 54rem;
   margin: 0 auto;
+   /* background-color: #85cc16; */
+   margin-top: 6rem;
 }
 main{
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 2rem;
+ 
 
 }
 .ai-design h1{

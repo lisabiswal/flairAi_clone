@@ -102,8 +102,6 @@ main{
   justify-content: center;
   align-items: center;
   margin: 2rem;
- 
-
 }
 .scrolled{
   background-color: #85cc16;
@@ -161,10 +159,25 @@ main{
   text-decoration: underline;
   text-decoration-color: var(--bodyColor);
   overflow-x: hidden;
-
 }
 .secAnim{
   text-align: center;
+}
+.marque-heading{
+  display: flex;
+  justify-content: center;
+  margin: 5rem;
+}
+.scrollx{
+  width: 70rem;
+  overflow-x: hidden;
+}
+.marque-heading .inner-cont h2{
+  color: #515257;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 28px;
 }
 
 

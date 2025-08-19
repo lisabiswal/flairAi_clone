@@ -28,13 +28,15 @@ body{
 .left-side img{
   width: 25px;
 }
+
 nav{
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   /* position: fixed; */
+  height: 5rem;
 }
 nav .right-side{
   display: flex;
@@ -102,6 +104,10 @@ main{
   margin: 2rem;
  
 
+}
+.scrolled{
+  background-color: #85cc16;
+  color: #161616;
 }
 .ai-design h1{
   font-size: 6rem;

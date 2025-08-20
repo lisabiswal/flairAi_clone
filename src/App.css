@@ -6,6 +6,7 @@
   --buttonBorder: #4d4a4add;
   --heroText: #85cc16;
   --navBg: #16161677;
+  --brand: #6dc517;
 }
 *{
   margin: 0;
@@ -209,14 +210,42 @@ main{
   /* background-color: #85cc16; */
   display: flex;
   justify-content: center;
-  align-items: center;
- 
-
-  
+  align-items: center; 
 }
 .heroImg img{
   width: 100%;
   position: absolute;
+}
+.brand{
+  width: 79%;
+  margin: 0 auto;
+  /* background-color: #85cc16; */
+  margin-top: 10rem;
+  margin-bottom: 5rem;
+}
+.brand p{
+  color: var(--brand);
+  margin-bottom: 2rem;
+}
+.brand h1{
+  font-size: 6rem;
+  font-weight: 300;
+  line-height: 1;
+  
+}
+.btns{
+   margin-top: 6rem;
+}
+#selected{
+  border: 1px solid var(--brand);
+  color: var(--brand);
+}
+.btns .model{
+  border: 0.5px solid var(--hover);
+  color: var(--testColor);
+  padding: 0.5rem 2rem;
+  border-radius: 2rem;
+  margin-right: 0.5rem;
 }
 
 

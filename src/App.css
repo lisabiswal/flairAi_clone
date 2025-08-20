@@ -166,7 +166,7 @@ main{
 .marque-heading{
   display: flex;
   justify-content: center;
-  margin: 5rem;
+  margin-top: 45rem;
 }
 .scrollx{
   width: 70rem;
@@ -199,6 +199,24 @@ main{
   gap: 1.9rem;
    white-space: nowrap;
    
+}
+.relative{
+   position: relative;
+   margin: 22rem 0;
+}
+.heroImg{
+  width: 100%;
+  /* background-color: #85cc16; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+
+  
+}
+.heroImg img{
+  width: 100%;
+  position: absolute;
 }
 
 

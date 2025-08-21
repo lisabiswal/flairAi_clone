@@ -11,9 +11,13 @@ export default function BrandCont() {
           <div className="btns">
             <div className="textBtns">
               <buttton className="model" id="selected">On Model Photography</buttton>
-              <Btns text="Product Vibes"/>
-              <Btns text="Marketing & Ads"/>
-              <Btns text="Product Photography"/>
+              <Btns text="Product Vibes" />
+              <Btns text="Marketing & Ads" />
+              <Btns text="Product Photography" />
+            </div>
+            <div className="arrowBtn">
+              <button className="left-arr">←</button>
+              <button className="right-arr">→</button>
             </div>
           </div>
         </div>
@@ -21,8 +25,8 @@ export default function BrandCont() {
     </section>
   )
 }
-function Btns({text}){
-  return(
+function Btns({ text }) {
+  return (
     <buttton className="model">{text}</buttton>
   )
 }
